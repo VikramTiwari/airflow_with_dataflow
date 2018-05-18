@@ -5,8 +5,9 @@ import os
 CURRENT_DIR, CURRENT_FILENAME = os.path.split(__file__)
 logging.getLogger().setLevel(logging.INFO)
 
+
 def string_to_float(value):
-    logging.info('string_to_float', value)
+    logging.info('string_to_float')
     if type(value) == type('str'):
         return float(''.join(
             e for e in unicode(value, 'utf-8') if e.isalnum()))

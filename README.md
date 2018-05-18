@@ -8,7 +8,7 @@
 
 ```
 # this will create a virtual environment without affecting anything on your system
-virtualenv -p=python2 dataflow
+virtualenv -p python2 dataflow
 
 # activate virual environment
 source dataflow/bin/activate

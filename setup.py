@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="Common",
@@ -8,7 +8,5 @@ setup(
     author_email="vikramtheone1@gmail.com",
     description=("Custom python utils needed for dataflow cloud runner"),
     packages=find_packages(),
-    package_data={
-        "Common": [".credentials/*.json"]
-    },
+    package_data={"Common": [".credentials/*.json"]},
     include_package_data=True)

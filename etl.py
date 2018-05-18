@@ -11,6 +11,8 @@ from time import gmtime, strftime
 
 import apache_beam as beam
 import apache_beam.transforms.window as window
+import numpy as np
+import pandas as pd
 from apache_beam.io import WriteToText
 from apache_beam.options.pipeline_options import (GoogleCloudOptions,
                                                   PipelineOptions,
@@ -19,8 +21,6 @@ from apache_beam.options.pipeline_options import (GoogleCloudOptions,
                                                   WorkerOptions)
 
 import Common
-import numpy as np
-import pandas as pd
 
 job_id = ''.join(e for e in str(datetime.datetime.now()) if e.isalnum())
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
